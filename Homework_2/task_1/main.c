@@ -1,3 +1,4 @@
-﻿//
-// Created by autoh on 06.04.2026.
-//
+﻿
+int main(void) {
+    return 0;
+}
