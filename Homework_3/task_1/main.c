@@ -33,7 +33,7 @@ int main(void) {
         printf("%02X ", dest[i]); //48 69 30 31 32 33 34 35 36 37 38 39 31 30 00 01 01 01 01 01
     }
     printf("\n");
-    //conclusion: strncat add '/0' terminator in the end, even if we have buffer overflow. They can modify another part of memory ahead.
+    //conclusion: strncat add '/0' terminator in the end, even if we have buffer overflow. It can modify another part of memory ahead of it.
 
     return 0;
 }
