@@ -5,8 +5,8 @@ char dest[10];
 char const src[] = "012345678910";
 
 int main(void) {
-    memset(dest, 1, sizeof(dest) + 10);
-    memset(dest, 0, sizeof(dest));
+    memset(dest, 1, sizeof(dest) + 10); // Added trash in memory for simulating used memory
+    memset(dest, 0, sizeof(dest)); // Cleared for future variables
     printf("Before using strncpy function: \nDest string: %s, Src string: %s.\n", dest, src); //Dest string: , Src string: 012345678910.
     printf("----------------------\n");
 
@@ -33,7 +33,7 @@ int main(void) {
         printf("%02X ", dest[i]); //48 69 30 31 32 33 34 35 36 37 38 39 31 30 00 01 01 01 01 01
     }
     printf("\n");
-    //conclusion: strncat add '/0' terminator in the end, even if we have buffer overflow. But they can modify another part of memory ahead.
+    //conclusion: strncat add '/0' terminator in the end, even if we have buffer overflow. They can modify another part of memory ahead.
 
     return 0;
 }
