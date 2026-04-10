@@ -1,8 +1,8 @@
 ﻿#include <stdio.h>
 #include <string.h>
 
-char dest[10];
 char const src[] = "012345678910";
+char dest[10];
 
 int main(void) {
     memset(dest, 1, sizeof(dest) + 10); // Added trash in memory for simulating used memory
