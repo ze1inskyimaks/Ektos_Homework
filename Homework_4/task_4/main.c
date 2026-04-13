@@ -1,9 +1,7 @@
-﻿
-void (*get_func_ptr(void));
+﻿#include "secondary.h"
 
 int main(void) {
-    void (*func_ptr)(void);
-    func_ptr = get_func_ptr(); // Get pointer to a function returned by get_func_ptr
+    func_ptr_t func_ptr = get_func_ptr(); // Get pointer to a function returned by get_func_ptr
 
     func_ptr();
 
